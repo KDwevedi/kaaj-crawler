@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
 # Install dependencies
 COPY requirements.txt .
 RUN pip install -r requirements.txt
+RUN playwright install-deps
 RUN playwright install
 
 # Copy the Flask application (flaskr) and instance folder
