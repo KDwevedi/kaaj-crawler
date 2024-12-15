@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "9ad77e39-a70e-403d-89d5-19f32a763035",
+		"name": "Kaaj Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25162699"
+	},
+	"item": [
+		{
+			"name": "Get Business Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/business/crawl?business-name=Fighters, Inc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"business",
+						"crawl"
+					],
+					"query": [
+						{
+							"key": "business-name",
+							"value": "Fighters, Inc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Business Detail From DB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/business/db-lookup?business-name=Fighters, Inc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"business",
+						"db-lookup"
+					],
+					"query": [
+						{
+							"key": "business-name",
+							"value": "Fighters, Inc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
