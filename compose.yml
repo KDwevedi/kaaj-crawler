@@ -41,18 +41,18 @@ services:
     networks:
       - app-network
 
-  # frontend:
-  #   container_name: crawler_frontend
-  #   build:
-  #     context: ./frontend
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     backend:
-  #       condition: service_started
-  #   networks:
-  #     - app-network
+  frontend:
+    container_name: crawler_frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_started
+    networks:
+      - app-network
 
 volumes:
   kaajdb:
